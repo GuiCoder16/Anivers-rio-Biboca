@@ -16,7 +16,9 @@ body {
   height: 100vh;
   text-align: center;
   color: white;
-  background: linear-gradient(135deg, #1e2e8b, #245bcf, #1418ff);
+  background: linear-gradient(270deg, #1e2e8b, #245bcf, #1418ff);
+  background-size: 1000% 1000%;
+  animation: gradienteAnimado 15s ease infinite;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,6 +44,18 @@ h1 {
   font-size: 3em;
   text-shadow: 0 0 20px #fff, 0 0 40px #ff69b4;
   animation: brilho 2s infinite alternate;
+}
+
+@keyframes gradienteAnimado {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes brilho {
@@ -83,6 +97,8 @@ button:hover {
   background: linear-gradient(135deg, #1e2e8b, #245bcf, #1418ff);
   text-align: center;
   color: #ffffff;
+  background-size: 1000% 1000%;
+  animation: gradienteAnimado 15s ease infinite;
 }
 
 .mensagens h2 {
